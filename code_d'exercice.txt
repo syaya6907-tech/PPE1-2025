@@ -1,0 +1,167 @@
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github$ git clone git@github.com:syaya6907-tech/PPE1-2025.git
+Cloning into 'PPE1-2025'...
+Enter passphrase for key '/home/yayasarah/.ssh/id_ed25519': 
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ../.gitignore
+        new file:   ../README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.~lock.td5(2).txt#
+        ../01-scripts-exercices.pdf
+        ../1_IntroEnPython.pdf
+        ../2_NotionsBase_etu.pdf
+        ../3_String.pdf
+        "../4L7TL02P-MAAT-Cours2-introduction a\314\200 la modalite\314\201-1.pdf"
+        "../4L7TL02P-MAAT-Cours2-introduction a\314\200 la modalite\314\201-2.pdf"
+        "../4L7TL02P-MAAT-Cours2-introduction a\314\200 la modalite\314\201-3.pdf"
+        "../4L7TL02P-MAAT-Cours2-introduction a\314\200 la modalite\314\201.pdf"
+        ../4L7TL02P-MAAT-Cours3-incertitude-1.pdf
+        ../4L7TL02P-MAAT-Cours3-incertitude.pdf
+        ../4L7TL02P-MAAT-Cours4-ModalE-1.pdf
+        ../4L7TL02P-MAAT-Cours4-ModalE-2.pdf
+        ../4L7TL02P-MAAT-Cours4-ModalE-3.pdf
+        ../4L7TL02P-MAAT-Cours4-ModalE-4.pdf
+        ../4L7TL02P-MAAT-Cours4-ModalE.pdf
+        ../4_Listes_etu-1.pdf
+        ../4_Listes_etu-2.pdf
+        ../4_Listes_etu.pdf
+        ../5_Tuples.pdf
+        ../6_Ensembles.pdf
+        ../Arabic.traineddata
+        ../Cours1 (INTRODUCTION).pdf
+        ../Cours4-PretraitementsLing_etu.pdf
+        ../Cours5-PretraitementInfo_etu.pdf
+        ../Cours_3.pdf
+        ../M1-corpus_arbores_et_parsing-cours1.pdf
+        ../M1-corpus_arbores_et_parsing-cours2.pdf
+        ../M1-corpus_arbores_et_parsing-cours3-1.pdf
+        ../M1-corpus_arbores_et_parsing-cours3-reponses+devoir.pdf
+        ../M1-corpus_arbores_et_parsing-cours3.pdf
+        ../M1-corpus_arbores_et_parsing-cours4.pdf
+        ../ModalE(1).zip
+        ../ModalE.zip
+        ../ModalE/
+        ../README(1).md
+        ../S5(1).docx
+        ../S5(2).docx
+        ../S5(3).docx
+        ../S5(4).docx
+        ../S5.docx
+        ../Screenshot 2025-10-17 at 10-58-40 Cours5-PretraitementInfo_etu.pdf.png
+        ../Screenshot 2025-10-17 at 16-45-11 Grew-match.png
+        ../Screenshot 2025-10-19 at 20-47-54 .png
+        "../Se\314\201ance 1.pdf"
+        ../TD1(1).docx
+        ../TD1(2).docx
+        ../TD1(3).docx
+        ../TD1.docx
+        ../TD2(1).docx
+        ../TD2(2).docx
+        ../TD2-1_Familiarisation.pdf
+        ../TD2.docx
+        ../TD3 - ModalE_installation.pdf
+        ../TD4 - annotation -1.pdf
+        ../TD4 - annotation -2.pdf
+        ../TD4 - annotation -3.pdf
+        ../TD4 - annotation -4.pdf
+        ../TD4 - annotation -5.pdf
+        ../TD4 - annotation -6.pdf
+        ../TD4 - annotation .pdf
+        ../Unitex-GramLab-3.3-linux-x86_64.run
+        ../Wiktionnaire, le dictionnaire libre.html
+        ../Wiktionnaire, le dictionnaire libre_fichiers/
+        ../Wiktionnaire.html
+        ../ara.traineddata
+        ../arabe.jpeg
+        ../arabe.txt
+        ../eduroam-linux-INdLeCO(1).py
+        ../eduroam-linux-INdLeCO.py
+        ../export.conllu
+        ../git-along-MonPremierTag(1).zip
+        ../git-along-MonPremierTag.tar.gz
+        ../git-along-MonPremierTag.zip
+        ../git-intro-exercices.pdf
+        ../git-intro_and_more-1.pdf
+        ../git-intro_and_more.pdf
+        ../guide dannotation work in progress.pdf
+        ../hin(1).traineddata
+        ../hin.traineddata
+        ../hindi.png
+        ../hindi.txt
+        ../introduction-1.pdf
+        ../introduction-2.pdf
+        ../introduction-3.pdf
+        ../introduction-4.pdf
+        ../introduction-5.pdf
+        ../introduction.pdf
+        ../journal-de-bord
+        ../journal-de-bord.md
+        ./
+        ../ourdou.tif
+        ../ourdou.txt
+        ../pie_rouge.xml
+        ../td automate.zip
+        ../td5(1).csv
+        ../td5(1).txt
+        ../td5(2).csv
+        ../td5(2).txt
+        ../td5.csv
+        ../td5.txt
+        ../tei_exemple.xsl
+        ../tp automate.zip
+        ../unix-1.pdf
+        ../unix-2.pdf
+        ../unix.pdf
+        ../urd.traineddata
+
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github$ cd PPE1-2025
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ git add azerty.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ git config --global user.name "syaya6907-tech"
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ git config --global user.email "syaya6907@gmail.com"
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ git commit
+[main 01aaf1f] test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 azerty.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ git push
+Enter passphrase for key '/home/yayasarah/.ssh/id_ed25519': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:syaya6907-tech/PPE1-2025.git
+   f376b83..01aaf1f  main -> main
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/Downloads/mon_github/PPE1-2025$ 

@@ -1,0 +1,375 @@
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~$ cd ~/PPE1-2025
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ ls
+miniprojet  miniprojet.sh  README.md
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ ls R
+ls: cannot access 'R': No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ ls -R
+.:
+miniprojet  miniprojet.sh  README.md
+
+./miniprojet:
+programmes  tableaux  urls
+
+./miniprojet/programmes:
+ex1.sh  miniprojet.sh
+
+./miniprojet/tableaux:
+tableau-fr.tsv
+
+./miniprojet/urls:
+fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ ./miniprojet/programmes/miniprojet.sh miniprojet/urls/fr.txt
+1       https://fr.wikipedia.org/wiki/Robot
+2       https://fr.wikipedia.org/wiki/Robot_de_cuisine
+3       fr.wikipedia.org/wiki/Robot_d%27indexation
+4       https://fr.wikipedia.org/wiki/Bot_informatique
+5       https://fr.wikipedia.org/wiki/Atlas_(robot)
+6       https://roboty.magistry.fr
+7       https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)
+8       https://fr.wiktionary.org/wiki/robot
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots
+10      https://fr.wikipedia.org/wiki/Robotique
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ rm ~/PPE1-2025/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ cd ~/PPE1-2025
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ ls
+miniprojet  README.md
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ miniprojet README.md
+miniprojet: command not found
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ ls miniprojet
+programmes  tableaux  urls
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025$ cd miniprojet
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ls
+programmes  tableaux  urls
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat programmes/miniprojet.sh
+#!/bin/bash
+
+# Vérifier qu'un argument (fichier d'URL) est fourni
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <fichier_urls>"
+    exit 1
+fi
+
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+1       https://fr.wikipedia.org/wiki/Robot     200
+2       https://fr.wikipedia.org/wiki/Robot_de_cuisine  200
+3       fr.wikipedia.org/wiki/Robot_d%27indexation      301
+4       https://fr.wikipedia.org/wiki/Bot_informatique  200
+5       https://fr.wikipedia.org/wiki/Atlas_(robot)     200
+6       https://roboty.magistry.fr      000
+7       https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404
+8       https://fr.wiktionary.org/wiki/robot    200
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots        200
+10      https://fr.wikipedia.org/wiki/Robotique 200
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+1       https://fr.wikipedia.org/wiki/Robot     200
+2       https://fr.wikipedia.org/wiki/Robot_de_cuisine  200
+3       fr.wikipedia.org/wiki/Robot_d%27indexation      301
+4       https://fr.wikipedia.org/wiki/Bot_informatique  200
+5       https://fr.wikipedia.org/wiki/Atlas_(robot)     200
+6       https://roboty.magistry.fr      000
+7       https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404
+8       https://fr.wiktionary.org/wiki/robot    200
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots        200
+10      https://fr.wikipedia.org/wiki/Robotique 200
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ chmod +x programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ chmod +x programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+                                0
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ programmes/miniprojet.sh
+Usage: programmes/miniprojet.sh <fichier_urls>
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ chmod +x programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt > tableaux/tableau-fr.tsv
+cat tableaux/tableau-fr.tsv
+
+cat tableaux/tableau-fr.tsv
+
+cat urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat tableaux/tableau-fr.tsv
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488ikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       2298s://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     UTF-8
+8       17786://fr.wiktionary.org/wiki/robot    200     UTF-8
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots       200      42388
+10      264ps://fr.wikipedia.org/wiki/Robotique 200     utf-8
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ 
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat tableaux/tableau-fr.tsv
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488ikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       2298s://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     UTF-8
+8       17786://fr.wiktionary.org/wiki/robot    200     UTF-8
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots       200      42388
+10      264ps://fr.wikipedia.org/wiki/Robotique 200     utf-8
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ 
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat urls/fr.txt
+https://fr.wikipedia.org/wiki/Robot
+https://fr.wikipedia.org/wiki/Robot_de_cuisine
+fr.wikipedia.org/wiki/Robot_d%27indexation
+https://fr.wikipedia.org/wiki/Bot_informatique
+https://fr.wikipedia.org/wiki/Atlas_(robot)
+https://roboty.magistry.fr
+https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)
+https://fr.wiktionary.org/wiki/robot
+https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots
+https://fr.wikipedia.org/wiki/Robotique
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ git reset
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ "reset--hard 039...3a"
+reset--hard 039...3a: command not found
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ script comptes.sh pour compter le nombre de Location par année
+script: unexpected number of arguments
+Try 'script --help' for more information.
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ 'script --help'
+script --help: command not found
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ file -i urls/fr.txt
+urls/fr.txt: text/plain; charset=us-ascii
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ iconv -f US-ASCII -t UTF-8 urls/fr.txt -o urls/fr_utf8.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ mv urls/fr_utf8.txt urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ file -i urls/fr.txt
+urls/fr.txt: text/plain; charset=us-ascii
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ iconv -f US-ASCII -t UTF-8 urls/fr.txt -o urls/fr_utf8.txt
+mv urls/fr_utf8.txt urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ file -i urls/fr.txt
+urls/fr.txt: text/plain; charset=us-ascii
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ls -l urls/fr.txt
+-rw-rw-r-- 1 yayasarah yayasarah 441 oct.  27 11:16 urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat urls/fr.txt
+https://fr.wikipedia.org/wiki/Robot
+https://fr.wikipedia.org/wiki/Robot_de_cuisine
+fr.wikipedia.org/wiki/Robot_d%27indexation
+https://fr.wikipedia.org/wiki/Bot_informatique
+https://fr.wikipedia.org/wiki/Atlas_(robot)
+https://roboty.magistry.fr
+https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)
+https://fr.wiktionary.org/wiki/robot
+https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots
+https://fr.wikipedia.org/wiki/Robotique
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat urls/fr.txt
+https://fr.wikipedia.org/wiki/Robot
+https://fr.wikipedia.org/wiki/Robot_de_cuisine
+fr.wikipedia.org/wiki/Robot_d%27indexation
+https://fr.wikipedia.org/wiki/Bot_informatique
+https://fr.wikipedia.org/wiki/Atlas_(robot)
+https://roboty.magistry.fr
+https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)
+https://fr.wiktionary.org/wiki/robot
+https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots
+https://fr.wikipedia.org/wiki/Robotique
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ chmod +x programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488ikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       264ps://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     utf-8
+8       264ps://fr.wiktionary.org/wiki/robot    429     utf-8
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots       429      264-8
+10      264ps://fr.wikipedia.org/wiki/Robotique 429     utf-8
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt > tableaux/tableau-fr.tsv
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat tableaux/tableau-fr.tsv
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488ikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       264ps://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     utf-8
+8       264ps://fr.wiktionary.org/wiki/robot    429     utf-8
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots       429      264-8
+10      264ps://fr.wikipedia.org/wiki/Robotique 429     utf-8
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ fr.txt
+fr.txt: command not found
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat tableaux/tableau-fr.txt
+cat: tableaux/tableau-fr.txt: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ /programmes/miniprojet.sh urls/fr.txt > tableaux/tableau-fr.tsv
+bash: /programmes/miniprojet.sh: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488s://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     UTF-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       2298s://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  429     utf-8
+8       264ps://fr.wiktionary.org/wiki/robot    429     utf-8
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots       429      264-8
+10      264ps://fr.wikipedia.org/wiki/Robotique 200     utf-8
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488s://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       264ps://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     utf-8
+8       264ps://fr.wiktionary.org/wiki/robot    429     utf-8
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots       429      42388
+10      264ps://fr.wikipedia.org/wiki/Robotique 429     utf-8
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt > tableaux/tableau-fr.tsv
+cat tableaux/tableau-fr.tsv
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488s://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       264ps://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     utf-8
+8       264ps://fr.wiktionary.org/wiki/robot    429     utf-8
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots       429      42388
+10      264ps://fr.wikipedia.org/wiki/Robotique 429     utf-8
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ rm urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat urls/fr.txt
+https://fr.wikipedia.org/wiki/Robot
+https://fr.wikipedia.org/wiki/Robot_de_cuisine
+https://fr.wikipedia.org/wiki/Robot_d%27indexation
+https://fr.wikipedia.org/wiki/Bot_informatique
+https://fr.wikipedia.org/wiki/Atlas_(robot)
+https://roboty.magistry.fr
+https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)
+https://fr.wiktionary.org/wiki/robot
+https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots
+https://fr.wikipedia.org/wiki/Robotique
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+1       13904://fr.wikipedia.org/wiki/Robot     200     UTF-8
+2       4129s://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8
+3       5488s://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8
+4       264ps://fr.wikipedia.org/wiki/Bot_informatique  200     UTF-8
+5       264ps://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8
+6       https://roboty.magistry.fr      000             0
+7       2298s://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  429     utyayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano urls/fr.txt
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ nano programmes/miniprojet.sh
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt
+1       https://fr.wikipedia.org/wiki/Robot     200     UTF-8   13904
+2       https://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8   4131
+3       https://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8   5490
+4       https://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8   264
+5       https://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8   264
+6       https://roboty.magistry.fr      000             0
+7       https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     utf-8   264
+8       https://fr.wiktionary.org/wiki/robot    429     utf-8   264
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots        429     UTF-8       264
+10      https://fr.wikipedia.org/wiki/Robotique 429     utf-8   264
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt > tableaux/tableau-fr.tsv
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat tableaux/tableau-fr.tsv
+1       https://fr.wikipedia.org/wiki/Robot     200     UTF-8   13904
+2       https://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8   4129
+3       https://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8   5488
+4       https://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8   264
+5       https://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8   264
+6       https://roboty.magistry.fr      000             0
+7       https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  429     UTF-8   264
+8       https://fr.wiktionary.org/wiki/robot    429     utf-8   264
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots        429     utf-8       264
+10      https://fr.wikipedia.org/wiki/Robotique 200     utf-8   264
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$  urls/fr.txt
+1       https://fr.wikipedia.org/wiki/Robot     200     UTF-8   13904
+2       https://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8   4131
+3       https://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8   5490
+4       https://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8   264
+5       https://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8   264
+6       https://roboty.magistry.fr      000             0
+7       https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  404     utf-8   264
+8       https://fr.wiktionary.org/wiki/robot    429     utf-8   264
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots        429     UTF-8       264
+10      https://fr.wikipedia.org/wiki/Robotique 429     utf-8   264
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ./programmes/miniprojet.sh urls/fr.txt > tableaux/tableau-fr.tsv
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cat tableaux/tableau-fr.tsv
+1       https://fr.wikipedia.org/wiki/Robot     200     UTF-8   13904
+2       https://fr.wikipedia.org/wiki/Robot_de_cuisine  200     UTF-8   4129
+3       https://fr.wikipedia.org/wiki/Robot_d%27indexation      200     UTF-8   5488
+4       https://fr.wikipedia.org/wiki/Bot_informatique  200     utf-8   264
+5       https://fr.wikipedia.org/wiki/Atlas_(robot)     429     utf-8   264
+6       https://roboty.magistry.fr      000             0
+7       https://fr.wikipedia.org/wiki/Robot_(Leonard_de_Vinci)  429     UTF-8   264
+8       https://fr.wiktionary.org/wiki/robot    429     utf-8   264
+9       https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots        429     utf-8       264
+10      https://fr.wikipedia.org/wiki/Robotique 200     utf-8   264
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ libreoffice --calc tableaux/tableau-fr.tsv
+bash: urls/fr.txt: Permission denied
+1: command not found
+2: command not found
+3: command not found
+4: command not found
+bash: syntax error near unexpected token `('
+6: command not found
+bash: syntax error near unexpected token `('
+8: command not found
+9: command not found
+10: command not found
+bash: yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$: No such file or directory
+bash: yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$: No such file or directory
+1: command not found
+2: command not found
+3: command not found
+4: command not found
+bash: syntax error near unexpected token `('
+6: command not found
+bash: syntax error near unexpected token `('
+8: command not found
+9: command not found
+10: command not found
+bash: yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cd ~/PPE1-202/miniprojet
+bash: cd: /home/yayasarah/PPE1-202/miniprojet: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ls tableaux
+tableau-fr.tsv
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ libreoffice --calc tableaux/tableau-fr.tsv
+Warning: failed to launch javaldx - java may not function correctly
+         
+
+
+
+
+
+
+
+
+libreoffice --calc tableaux/tableau-fr.tsv &    
+bash: yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cd ~/PPE1-202/miniprojet
+bash: cd: /home/yayasarah/PPE1-202/miniprojet: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ls tableaux
+tableau-fr.tsv
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ libreoffice --calc tableaux/tableau-fr.tsv
+Warning: failed to launch javaldx - java may not function correctly
+   
+
+
+
+
+
+libreoffice --calc tableaux/tableau-fr.tsv &    
+bash: yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ cd ~/PPE1-202/miniprojet
+bash: cd: /home/yayasarah/PPE1-202/miniprojet: No such file or directory
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ ls tableaux
+tableau-fr.tsv
+yayasarah@yaya-hpprobook450156inchg9notebookpc:~/PPE1-2025/miniprojet$ libreoffice --calc tableaux/tableau-fr.tsv
+Warning: failed to launch javaldx - java may not function correctly
+   
+
+libreoffice --calc tableaux/tableau-fr.tsv &
+
+
+
+
+reset
+libreoffice --calc tableaux/tableau-fr.tsv >/dev/null 2>&1 &
+

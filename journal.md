@@ -1,3 +1,4 @@
+< HEAD
 Séance 1
 
 Dates : 24 septembre, 1er octobre, 8 octobre
@@ -11,3 +12,6 @@ J’ai compris que si je restais à attendre, je risquais de rater encore plus d
 Même si c’était difficile, grâce aux tutoriels sur YouTube et aux photos, j’ai finalement réussi à installer Linux de nouveau. Cela m’a permis de repartir à zéro, malgré un énorme retard par rapport au rythme du cours. Avec tous les autres modules à suivre, je ne peux pas me focaliser uniquement sur le PPE.
 
 Je voulais expliquer ce retard, qui explique aussi pourquoi je commence seulement maintenant à écrire dans le journal. Tout était nouveau pour moi : GitHub, les dépôts, l’écriture dans le journal, les commandes terminal… Au début, j’ai essayé de comprendre, mais c’était beaucoup à assimiler. Même si certaines commandes sont simples, apprendre tout en même temps était difficile. Je me sens encore un peu perdue, mais j’essaie de me mettre à l’aise et de progresser petit à petit.
+
+
+ 08e723f (Copie du projet local vers le dépôt GitHub)

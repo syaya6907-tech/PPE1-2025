@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <fichier_texte>"
+    exit 1
+fi
+
+FICHIER=$1
+
+if [ ! -f "$FICHIER" ]; then
+    echo "Erreur : le fichier '$FICHIER' n'existe pas."
+    exit 1
+fi
+
+# Compter les mots
+echo "=== Comptage des mots ==="
+cat "$FICHIER" | tr -c '[:alnum:]' '[\n*]' | grep -v '^$' | sort | uniq -c | sort -nr
+
+# Compter les bigrammes (deux mots consécutifs)
+echo "=== Comptage des bigrammes ==="
+cat "$FICHIER" | tr -c '[:alnum:]' '[\n*]' | grep -v '^$' | \
+awk 'NR>1 {print prev,$0} {prev=$0}' | sort | uniq -c | sort -nr
+

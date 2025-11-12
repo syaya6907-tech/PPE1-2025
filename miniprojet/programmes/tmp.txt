@@ -6,9 +6,15 @@ content-language: fr
 accept-ch: 
 last-modified: Fri, 07 Nov 2025 21:34:18 GMT
 content-type: text/html; charset=UTF-8
+<<<<<<< HEAD
 age: 26400
 accept-ranges: bytes
 x-cache: cp6014 miss, cp6010 hit/69
+=======
+age: 35505
+accept-ranges: bytes
+x-cache: cp6014 miss, cp6010 hit/81
+>>>>>>> 08e723f (Copie du projet local vers le dépôt GitHub)
 x-cache-status: hit-front
 server-timing: cache;desc="hit-front", host;desc="cp6010"
 strict-transport-security: max-age=106384710; includeSubDomains; preload
@@ -22,9 +28,15 @@ cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
 vary: Accept-Encoding,X-Subdomain,Cookie,Authorization,User-Agent
 set-cookie: GeoIP=FR:IDF:V__lizy-Villacoublay:48.79:2.20:v4; Path=/; secure; Domain=.wikipedia.org
 set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;SameSite=None;Max-Age=3600
+<<<<<<< HEAD
 set-cookie: WMF-Uniq=1X5Ejv6diqXhw9bDr5s_zQKnAAAAAFvdTxcLhw64ckBBLX6smshnbs4raxFJCwh2;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Tue, 10 Nov 2026 00:00:00 GMT
 content-length: 342299
 x-request-id: 909b38f0-a851-41f4-85e2-603de8379166
+=======
+set-cookie: WMF-Uniq=_h-DZ4sYVNZfw37jZBakugKnAAAAAFvd2iYXydgXCqzOML5onXzYNKdrZ79oGQA1;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Tue, 10 Nov 2026 00:00:00 GMT
+content-length: 342299
+x-request-id: c0159177-c719-47b4-8055-72c64addc863
+>>>>>>> 08e723f (Copie du projet local vers le dépôt GitHub)
 
 <!DOCTYPE html>
 <html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="fr" dir="ltr">
