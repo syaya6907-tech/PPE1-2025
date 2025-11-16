@@ -17,7 +17,7 @@ NB_LIGNE=0
 # Début du fichier HTML
 echo "<!DOCTYPE html>
 <html>
-<head>
+xq<head>
 <meta charset=\"UTF-8\">
 <title>Résultats Mini-Projet</title>
 </head>
