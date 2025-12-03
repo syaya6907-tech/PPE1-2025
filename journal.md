@@ -1,4 +1,4 @@
-< HEAD
+
 Séance 1
 
 Dates : 24 septembre, 1er octobre, 8 octobre
