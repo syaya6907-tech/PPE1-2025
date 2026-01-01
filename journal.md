@@ -46,6 +46,8 @@ Comparer les usages et expressions liées au mot regard.
 
 Préparer l’intégration des données dans le projet commun.
 
+Lors de l'ajout des liens arabes, j'ai constaté une différence importante par rapport aux liens utilisés par mes camarades Émilie et Maryam. Pour le français et l'anglais,les liens restent courts, lisibles et peuvent être copiés-collés directement dans le script ou le navigateur.
+En revanche, pour l'arabe, les liens sont encodés en UTF-8, ce qui les rend beaucoup plus longs et difficiles à lire, mais ils restent parfaitement fonctionnels.
 
 
 
